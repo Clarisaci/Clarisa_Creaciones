@@ -60,6 +60,14 @@ section {
   box-shadow: 0 0 12px #ffffff, 0 0 24px #ffffff, 0 0 36px #ffffff; /* strong white glow */
 }
 
+#logo1 {
+  /* background-color: transparent; */
+  max-width: 300px; /* adjust size */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* centers the logo horizontally */
+  /* padding: 0.5rem; */
+}
 
 
 #order {
