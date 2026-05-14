@@ -1,1 +1,41 @@
-# Clarisa_Creaciones
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="script.js"></script>
+
+<header>
+ 
+   <h1>Welcome to Clarisa Creaciones!</h1>
+   <h1>¡Bienvenidos! </h1>
+  </header>
+
+<section id="creations">
+  <h3>My Creations</h3>
+  <p>Hola! I’m Clarisa, and I create memorable magnets! Turn your favorite photos into keepsakes or unique gifts for loved ones — my magnets are designed to bring a little joy to every space. They’re also perfect for business cards, save-the-dates, and so much more. Currently, I offer square, rectangular (protrait and landscape), and circular magnets to match your style!</p>
+  <p>As an innovator, I’m always exploring new ways to bring creativity to life — from stickers to fully customized items — ensuring every product is as unique as the person receiving it. Reach out for customizable creations and sticker designs made just for you!</p>
+</section>
+<section id="about">
+  <h3>About Me</h3>
+  <p>My work is inspired by my Oaxacan roots, which I proudly incorporate into my brand identity. For my logo, I blended my favorite animal with the vibrant tradition of alebrijes — creating a unique elephant alebrije that reflects both culture and creativity.</p>
+</section>
+
+  <section id="order">
+    <h2>Submit an order! </h2>
+   <a href=" https://forms.gle/C1uub2GmQkwv9gdC7" target="_blank">Order Form</a>
+  </section>
+    
+<section id="contact">
+  <h3>Contact</h3>
+  <p> Email: <a href="mailto:Clarisa.crea@gmail.com">Clarisa.crea@gmail.com</a></p>
+  <p> Instagram: <a href="https://www.instagram.com/Clarisa.c_/" target="_blank">@Clarisa.c_</a></p>
+</section>
+
+  
+ <footer>
+    <img src="Clarisa creaciones.png" alt="Clarisa Creaciones Logo" id="logo">
+    <p> &copy; 2025 Clarisa. All rights reserved.</p>
+</footer>
