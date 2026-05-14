@@ -1,0 +1,68 @@
+:root {
+.card,
+.full-card {
+  background: var(--cream-soft);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(110, 27, 27, 0.08);
+}
+
+.card h3 {
+  color: var(--burgundy);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-list {
+  list-style: none;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.pricing-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.6);
+}
+
+.highlight {
+  background: var(--burgundy);
+  color: var(--cream);
+  border-radius: 30px;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.highlight .button {
+  margin-top: 1rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer img {
+  width: 120px;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .hero,
+  .grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
