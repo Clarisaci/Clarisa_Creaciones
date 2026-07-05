@@ -82,6 +82,7 @@ header#siteHeader.scrolled {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  position: relative;
 }
 .brand {
   display: flex;
@@ -90,9 +91,21 @@ header#siteHeader.scrolled {
   text-decoration: none;
   color: var(--cream);
 }
+.logo-badge {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--cream-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
 #navLogo {
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
   display: block;
 }
@@ -278,6 +291,35 @@ nav#siteNav a.nav-cta:hover { border-color: transparent; opacity: 0.9; }
 }
 .vinyl-card:nth-child(2) .vinyl-tag { background: var(--burgundy-light); color: var(--cream-2); }
 
+/* Mundial special edition */
+.mundial-section { background: linear-gradient(180deg, var(--cream-2), var(--cream)); }
+.mundial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.6rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+.mundial-card {
+  background: var(--cream-2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  scroll-margin-top: 90px;
+  transition: outline-color 0.3s ease;
+  outline: 3px solid transparent;
+  outline-offset: 4px;
+}
+.mundial-card:target { outline-color: var(--rose); }
+.mundial-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+}
+.mundial-info { padding: 1.2rem 1.4rem 1.4rem; }
+.mundial-info h3 { margin-bottom: 0.3rem; }
+
 /* Gallery placeholders */
 .gallery-grid {
   display: grid;
@@ -338,6 +380,27 @@ nav#siteNav a.nav-cta:hover { border-color: transparent; opacity: 0.9; }
 .price-note { font-family: var(--font-mono); font-size: 0.78rem; opacity: 0.7; margin: -0.4rem 0 0.6rem; }
 .price { font-family: var(--font-mono); font-size: 1.3rem; font-weight: 600; color: var(--burgundy); margin: 0; }
 .price span { display: block; font-size: 0.72rem; font-weight: 500; color: var(--ink); opacity: 0.65; text-transform: none; }
+
+.price-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-color: var(--rose);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.price-card-link:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.badge-mundial {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--rose);
+  color: var(--cream-2);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
 
 /* Order */
 .order-section {
