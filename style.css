@@ -92,12 +92,10 @@ header#siteHeader.scrolled {
   color: var(--cream);
 }
 #navLogo {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
-  border-radius: 50%;
-  background: var(--cream-2);
-  padding: 3px;
+  display: block;
 }
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand-text strong { font-family: var(--font-display); font-size: 1.05rem; }
@@ -314,7 +312,7 @@ nav#siteNav a.nav-cta:hover { border-color: transparent; opacity: 0.9; }
   align-items: center;
   text-align: left;
 }
-.about-logo { width: 100%; border-radius: 50%; box-shadow: var(--shadow); }
+.about-logo { width: 100%; height: auto; object-fit: contain; }
 
 /* Pricing */
 .price-grid {
@@ -393,12 +391,13 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
-  padding: 2rem 1rem 2.5rem;
-  background: var(--ink);
-  color: var(--cream);
+  padding: 2.5rem 1rem 3rem;
+  background: var(--cream-2);
+  color: var(--burgundy);
+  border-top: 2px solid rgba(110,27,27,0.15);
 }
-#footerLogo { width: 70px; height: 70px; border-radius: 50%; }
-footer p { margin: 0; font-size: 0.85rem; opacity: 0.8; }
+#footerLogo { width: 90px; height: 90px; object-fit: contain; display: block; }
+footer p { margin: 0; font-size: 0.85rem; opacity: 0.75; }
 
 /* Reveal on scroll */
 .content-section, .order-section, .hero-inner {
@@ -438,4 +437,3 @@ footer p { margin: 0; font-size: 0.85rem; opacity: 0.8; }
   .about-grid { grid-template-columns: 1fr; text-align: center; }
   .about-logo { width: 130px; margin: 0 auto; }
 }
-
