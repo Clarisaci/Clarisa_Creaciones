@@ -5,7 +5,7 @@
   --burgundy: #6e1b1b;
   --burgundy-light: #8c2b2b;
   --teal: #2f7a6e;
-  --pink: #d6447a;
+  --rose: #b5566d;
   --ink: #2a1810;
 
   --font-display: 'Fraunces', serif;
@@ -114,9 +114,9 @@ nav#siteNav a {
   border-bottom: 2px solid transparent;
   transition: border-color 0.2s ease, opacity 0.2s ease;
 }
-nav#siteNav a:hover { border-color: var(--pink); }
+nav#siteNav a:hover { border-color: var(--rose); }
 nav#siteNav a.nav-cta {
-  background: var(--pink);
+  background: var(--rose);
   color: var(--cream-2);
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
@@ -236,7 +236,7 @@ nav#siteNav a.nav-cta:hover { border-color: transparent; opacity: 0.9; }
   text-align: left;
 }
 .sticker-card:hover { transform: rotate(0deg) translateY(-4px); box-shadow: 0 16px 34px rgba(42,24,16,0.18); }
-.sticker-card h3 { color: var(--pink); }
+.sticker-card h3 { color: var(--rose); }
 .sticker-card .peel {
   position: absolute;
   top: -1px;
@@ -303,12 +303,12 @@ nav#siteNav a.nav-cta:hover { border-color: transparent; opacity: 0.9; }
   padding: 0.5rem 0.7rem;
   font-family: var(--font-mono);
 }
-.ph-1 { background: linear-gradient(135deg, var(--pink), var(--burgundy)); }
-.ph-2 { background: linear-gradient(135deg, var(--teal), var(--pink)); }
-.ph-3 { background: linear-gradient(135deg, var(--pink), var(--burgundy)); }
+.ph-1 { background: linear-gradient(135deg, var(--rose), var(--burgundy)); }
+.ph-2 { background: linear-gradient(135deg, var(--teal), var(--rose)); }
+.ph-3 { background: linear-gradient(135deg, var(--rose), var(--burgundy)); }
 .ph-4 { background: linear-gradient(135deg, var(--burgundy), var(--teal)); }
 .ph-5 { background: linear-gradient(135deg, var(--burgundy-light), var(--teal)); }
-.ph-6 { background: linear-gradient(135deg, var(--pink), var(--burgundy-light)); }
+.ph-6 { background: linear-gradient(135deg, var(--rose), var(--burgundy-light)); }
 .gallery-note code { background: rgba(42,24,16,0.08); padding: 0.1rem 0.35rem; border-radius: 4px; }
 
 /* About */
@@ -347,9 +347,9 @@ nav#siteNav a.nav-cta:hover { border-color: transparent; opacity: 0.9; }
   color: var(--cream);
 }
 .order-section h2 { color: var(--cream); }
-.order-section .eyebrow { color: var(--pink); }
-.order-section .btn-primary { background: var(--pink); color: var(--cream-2); margin-top: 1rem; }
-.order-section .btn-primary:hover { background: #c02f66; }
+.order-section .eyebrow { color: var(--rose); }
+.order-section .btn-primary { background: var(--rose); color: var(--cream-2); margin-top: 1rem; }
+.order-section .btn-primary:hover { background: #96475a; }
 
 /* Payment */
 .payment-grid {
@@ -386,11 +386,11 @@ a.payment-card:hover { transform: translateY(-3px); }
   text-decoration: none;
   font-weight: 600;
   color: var(--burgundy);
-  border-bottom: 2px solid var(--pink);
+  border-bottom: 2px solid var(--rose);
   padding-bottom: 2px;
   transition: color 0.2s ease;
 }
-.contact-links a:hover { color: var(--pink); }
+.contact-links a:hover { color: var(--rose); }
 
 /* Footer */
 footer {
@@ -406,8 +406,8 @@ footer {
 #footerLogo { width: 90px; height: 90px; object-fit: contain; display: block; }
 footer p { margin: 0; font-size: 0.85rem; opacity: 0.75; }
 
-/* Reveal on scroll */
-.content-section, .order-section, .hero-inner {
+/* Reveal on scroll (only applies once JS confirms it's running) */
+.js .content-section, .js .order-section, .js .hero-inner {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.6s ease, transform 0.6s ease;
